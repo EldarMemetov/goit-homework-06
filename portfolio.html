@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header-item">
@@ -55,6 +56,75 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-menu" data-menu-open>
+          <svg class="header-svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="tel-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="close-menu" data-menu-close>
+            <svg class="header-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="tel-open-modal list">
+            <li class="list-open">
+              <a href="./index.html" class="link-tel link">Studio</a>
+            </li>
+            <li class="list-open">
+              <a href="./portfolio.html" class="link-tel link">Portfolio</a>
+            </li>
+            <li class="list-open">
+              <a href="" class="link-tel link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <address class="header-contact-list">
+          <div class="">
+            <ul class="contact-list-header list">
+              <li class="header-contact-address list">
+                <a href="tel:+110001111111" class="tel-header link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="header-contact-address">
+                <a href="mailto:info@devstudio.com" class="mail-header link"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+        <div class="">
+          <ul class="icon-header-menu list">
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -89,6 +159,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img0.jpg 1x, ./images/img0-2x.jpg 2x"
                     src="./images/img0.jpg"
                     alt="Banking App"
                     class="img-banking"
@@ -113,6 +184,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
                     src="./images/img-1.jpg"
                     alt="Cashless Payment"
                     class="img-payment"
@@ -135,6 +207,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
                     src="./images/img-2.jpg"
                     alt="Meditation App"
                     class="img-app"
@@ -157,6 +230,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                     src="./images/img-3.jpg"
                     alt="Taxi Service"
                     class="img-taxi"
@@ -179,6 +253,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"
                     src="./images/img-4.jpg"
                     alt="Screen Illustrations"
                     class="img-screen"
@@ -201,6 +276,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-5.jpg 1x, ./images/img-5-2x.jpg 2x"
                     src="./images/img-5.jpg"
                     alt="Online Courses"
                     class="img-courses"
@@ -223,6 +299,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-6.jpg 1x, ./images/img-6-2x.jpg 2x"
                     src="./images/img-6.jpg"
                     alt="Instagram Stories"
                     class="img-stories"
@@ -245,6 +322,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-7.jpg 1x, ./images/img-7-2x.jpg 2x"
                     src="./images/img-7.jpg"
                     alt="Organic Food"
                     class="img-food"
@@ -267,6 +345,7 @@
               <a href="" class="link-banking link">
                 <div class="animation-container">
                   <img
+                    srcset="./images/img-8.jpg 1x, ./images/img-8-2x.jpg 2x"
                     src="./images/img-8.jpg"
                     alt="Fresh Coffee"
                     class="img-coffee"
@@ -352,5 +431,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

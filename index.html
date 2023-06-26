@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body class="body-list">
@@ -55,8 +56,79 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="open-menu" data-menu-open>
+          <svg class="header-svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="tel-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="close-menu" data-menu-close>
+            <svg class="header-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="tel-open-modal list">
+            <li class="list-open">
+              <a href="./index.html" class="link-tel link">Studio</a>
+            </li>
+            <li class="list-open">
+              <a href="./portfolio.html" class="link-tel link">Portfolio</a>
+            </li>
+            <li class="list-open">
+              <a href="" class="link-tel link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <address class="header-contact-list">
+          <div class="">
+            <ul class="contact-list-header list">
+              <li class="header-contact-address list">
+                <a href="tel:+110001111111" class="tel-header link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="header-contact-address">
+                <a href="mailto:info@devstudio.com" class="mail-header link"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+        <div class="">
+          <ul class="icon-header-menu list">
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="header-icon-list">
+              <a href="#" class="header-icon-link link"
+                ><svg class="icon-header-soc" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <!-- title and button -->
 
     <main class="main">
@@ -86,7 +158,6 @@
                 the perfect and creative solution.
               </p>
             </li>
-
             <li class="skills-info">
               <div class="icon-item">
                 <svg class="header-svg-icon" width="64" height="64">
@@ -99,7 +170,6 @@
                 within the shortest possible time.
               </p>
             </li>
-
             <li class="skills-info">
               <div class="icon-item">
                 <svg class="header-svg-icon" width="64" height="64">
@@ -112,7 +182,6 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-
             <li class="skills-info">
               <div class="icon-item">
                 <svg class="header-svg-icon" width="64" height="64">
@@ -129,13 +198,16 @@
         </div>
       </section>
 
-      <!-- skills -->
       <section class="are-we-doing">
         <div class="container">
           <h2 class="skills-doing">What are we doing</h2>
           <ul class="skills-img-list list">
             <li class="skills-team list">
               <img
+                srcset="
+                  ./images/Rectangle71.jpg    1x,
+                  ./images/Rectangle71-x2.jpg 2x
+                "
                 src="./images/Rectangle71.jpg"
                 alt="computer monitor"
                 class="img-computer"
@@ -145,6 +217,10 @@
             </li>
             <li class="skills-team list">
               <img
+                srcset="
+                  ./images/Rectangle71(1).jpg    1x,
+                  ./images/Rectangle71(1)-x2.jpg 2x
+                "
                 src="./images/Rectangle71(1).jpg"
                 alt="phone message"
                 class="img-phone"
@@ -154,6 +230,10 @@
             </li>
             <li class="skills-team list">
               <img
+                srcset="
+                  ./images/Rectangle71(2).jpg    1x,
+                  ./images/Rectangle71(2)-x2.jpg 2x
+                "
                 src="./images/Rectangle71(2).jpg"
                 alt="phone computer"
                 class="img-phone-computer"
@@ -172,6 +252,7 @@
           <ul class="list-team list">
             <li class="info-team list">
               <img
+                srcset="./images/img.jpg 1x, ./images/img-x2.jpg 2x"
                 src="./images/img.jpg"
                 alt="Mark Product Designer"
                 class="mark-img"
@@ -181,7 +262,6 @@
               <div class="team-container">
                 <h3 class="name-team">Mark Guerrero</h3>
                 <p class="profession-team">Product Designer</p>
-
                 <ul class="icon-main-list list">
                   <li class="social-icon-list">
                     <a href="#" class="social-icon-link"
@@ -214,6 +294,7 @@
             </li>
             <li class="info-team list">
               <img
+                srcset="./images/img(1).jpg 1x, ./images/img(1)-x2.jpg 2x"
                 src="./images/img(1).jpg"
                 alt="Tom Frontend"
                 class="tom-img"
@@ -256,6 +337,7 @@
             </li>
             <li class="info-team list">
               <img
+                srcset="./images/img(2).jpg 1x, ./images/img(2)-x2.jpg 2x"
                 src="./images/img(2).jpg"
                 alt="Camila Marketing"
                 class="camila-img"
@@ -297,6 +379,7 @@
             </li>
             <li class="info-team list">
               <img
+                srcset="./images/img(3).jpg 1x, ./images/img(3)-2x.jpg 2x"
                 src="./images/img(3).jpg"
                 alt="Daniel UI Designer"
                 class="daniel-img"
@@ -575,5 +658,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
