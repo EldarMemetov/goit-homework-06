@@ -252,6 +252,9 @@
     row-gap: 72px;
   }
   /** --------------footer--------------- */
+  .footer-container-item {
+    margin-bottom: 0;
+  }
   .input-footer {
     width: 264px;
     border-radius: 4px;
@@ -266,7 +269,7 @@
   }
   .footer-container {
     display: flex;
-    gap: 24px;
+
     justify-content: flex-start;
     margin-left: 108px;
   }
@@ -290,6 +293,9 @@
   }
   .footer-email {
     width: 100%;
+  }
+  .container-logo {
+    margin-right: 24px;
   }
 
   /** --------------modal--------------- */
@@ -657,5 +663,14 @@
     min-height: 584px;
     width: 408px;
     padding: 72px 24px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .modal {
+    width: 392px;
+  }
+  .input-footer {
+    width: 398px;
   }
 }
