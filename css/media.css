@@ -269,16 +269,14 @@
   }
   .footer-container {
     display: flex;
-
-    justify-content: flex-start;
-    margin-left: 108px;
+    justify-content: center;
   }
-
   .footer {
     padding-bottom: 96px;
   }
   .item-form {
     margin-left: unset;
+    padding-right: 50px;
   }
   .text-subscribe {
     text-align: left;
@@ -601,10 +599,9 @@
     display: flex;
   }
   /** --------------footer--------------- */
-  .footer-email {
-  }
   .item-form {
     margin-left: auto;
+    padding: 0;
   }
   .footer {
     background: var(--title-color);
