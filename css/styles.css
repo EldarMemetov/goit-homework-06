@@ -126,7 +126,7 @@ ul {
   background-color: #fff;
   top: 0;
   z-index: 2;
-  padding: 40px 24px 24px 40px;
+  padding: 80px 24px 24px 40px;
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -151,18 +151,21 @@ ul {
   margin-left: auto;
   background-color: transparent;
   margin-bottom: 32px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   text-align: center;
   width: 24px;
   height: 24px;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  padding-top: 6px;
+  top: 24px;
+  right: 24px;
+  position: absolute;
+  padding: 0px;
 }
 .header-icon-list {
   width: 40px;
