@@ -670,6 +670,10 @@
   .input-footer {
     width: 398px;
   }
+  .icon-header-menu {
+    gap: 56px;
+    justify-content: unset;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 417px) {
   .tel-header {
