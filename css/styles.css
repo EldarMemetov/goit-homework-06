@@ -136,6 +136,7 @@ ul {
 
 .header-svg {
   stroke: rgba(46, 47, 66, 1);
+  fill: rgba(46, 47, 66, 1);
 }
 .open-menu {
   margin-left: auto;
@@ -147,9 +148,7 @@ ul {
 }
 .close-menu {
   color: rgba(46, 47, 66, 1);
-  display: block;
   margin-left: auto;
-  border: none;
   background: transparent;
   margin-bottom: 32px;
   border: 2px solid rgba(0, 0, 0, 0.1);
